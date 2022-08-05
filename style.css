@@ -1,0 +1,89 @@
+.main {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    margin: 0 auto;
+  }
+  .name {
+    font-size: 20px;
+    font-family: "Arial";
+    color: #2f4f4f;
+    line-height: 23px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .athlets {
+    width: 220px;
+    height: 241px;
+    position: relative;
+  }
+  .athlets:hover {
+    background: #2f4f4f;
+    height: 287px;
+    margin-bottom: -46px;
+    transition: height 1s;
+    border-radius: 5px;
+    z-index: 1;
+    transform: scale(1.2)
+  }
+  .athlets:hover::after{
+    display: flex;
+    justify-content: center;
+  }
+  .athlets:nth-child(1):hover::after {
+    content: 'Football, $85.5M';
+  }
+  .athlets:nth-child(2):hover::after {
+    content: 'Football, $85.5M';
+  }
+  .athlets:nth-child(3):hover::after {
+    content: 'Fight, $85.5M';
+  }
+  .athlets:nth-child(4):hover::after {
+    content: 'Football, $85.5M';
+  }
+  .athlets:nth-child(5):hover::after {
+    content: 'Football, $85.5M';
+  }
+  .athlets:nth-child(6):hover::after {
+    content: 'Basketball, $85.5M';
+  }
+  .athlets:nth-child(7):hover::after {
+    content: 'Football, $85.5M';
+  }
+  .athlets:nth-child(8):hover::after {
+    content: 'Football, $85.5M';
+  }
+  .athlets:nth-child(9):hover::after {
+    content: 'Football, $85.5M';
+  }
+  .athlets:nth-child(10):hover::after{ 
+    content: 'Football, $85.5M';
+  }
+  .number {
+    width: 32px;
+    height: 32px;
+    background: #eee;
+    position: absolute;
+    color: #8b0000;
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 32px;
+    vertical-align: center;
+    text-align: center;
+    border-radius: 100%;
+    top: 91px;
+    right: 20px;
+    font-weight: 600;
+  }
+  .photo {
+    display: block;
+    margin: 0 auto;
+  }
+  @media (min-width: 1000px)
+  {
+    .main{
+      width: 910px;
+    }
+  }
