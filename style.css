@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     gap: 10px 10px;
     margin: 0 auto;
-    background: red;
   }
   .name {
     font-size: 20px;
@@ -18,21 +17,25 @@
     width: 220px;
     height: 241px;
     position: relative;
+    transition: all 1s ease-in-out;
   }
   .athlets:hover {
-    background: #2f4f4f;
+    background: gold;
     height: 287px;
     margin-bottom: -46px;
-    transition: height 1s;
     border-radius: 5px;
     z-index: 1;
-    transform: scale(1.2)
+    transform: scale(1.2);
+  }
+  .athlets:hover .photo{
+    border-radius: 60px;
   }
   .athlets:hover::after{
     display: flex;
     justify-content: center;
   }
   .athlets:nth-child(1):hover::after {
+
     content: 'Football, $85.5M';
   }
   .athlets:nth-child(2):hover::after {
